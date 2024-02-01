@@ -1,0 +1,12 @@
+@media screen and (min-width: 800px) {
+    header {
+        background-color: rgb(62, 1, 177);
+        color: aliceblue;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,17 @@
+
+body{
+    background-color: #2212b8;
+    color: white;
+    text-align: center;
+}
+div{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 30px;
+    
+}
+img{
+    max-width: 100%; /*100% tamano del contenedor*/
+    max-height: 100%;
+    
+}

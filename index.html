@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Lilian Gonzales - WDD 230 - Web Frontend Development</title>
+    <meta name="description"
+        content="Web Frontend Development. Course assignment portal. BYU-Idaho. Maria Lilian Gonzales Inga">
+    <meta name="author" content="Maria Lilian Gonzales Inga">
+    <!--Normalize.css goes first than the others css-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!--normalize.css minimized-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/media-query-index.css">
+    <!--Favicon-->
+    <link rel="icon" href="favicon.ico">
+    <!--Social media-->
+    <meta property="og:title" content="Web Frontend Development. Course assignment portal.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://estudiantes.ucontinental.edu.pe/wp-content/uploads/2019/02/foto-de-huancayo-peru-uc-portada.jpg">
+    <meta property="og:url" content=https://marylilian1618.github.io/wdd230 />
+</head>
+
+<body>
+    <header>
+        <section class="flex">
+            <img src="images/image01.jpg" alt="My photo">
+            <h1>Maria Lilian Gonzales Inga</h1>
+        </section>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="#home" title="Home" class="icon">Home</a>
+            <a href="lesson03/chamber-site-plan.html" title="Site plan" class="icon1">Site Plan</a>
+            <a href="chamber/" title="Chamber" class="icon2">Chamber</a>
+            <a href="https://www.byui.edu/" title="BYU Idaho" class="icon3">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=en" title="Scripture"
+                class="icon4">Scripture</a>
+        </nav>
+    </header>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="grid02">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ol>
+                    <li><a href="lesson01/holygrail.html">Holy Layout</a> | <a
+                            href="https://codepen.io/Mar-a-Lilian-Gonzales-Inga/pen/WNmojLJ">JS Pen</a></li>
+                    <li><a href="lesson02/media-query.html">Media Query</a> | <a href="lesson02/design.html">Design
+                            Principles Activity</a> | <a href="lesson02/design-principles.html">Design Principles
+                            Document</a></li>
+                    <li><a href="lesson03/images.html">screenshots activity 01</a></li> | <a
+                        href="https://codepen.io/Mar-a-Lilian-Gonzales-Inga/pen/YzgYZam">CodePen pseudo-element</a> | <a
+                        href="https://codepen.io/Mar-a-Lilian-Gonzales-Inga/pen/wvOmxmX">CodePen Hamburguer menu</a>
+                    <li><a href=""></a></li>
+                </ol>
+            </section>
+
+            <section class="card">
+                <h3>Information</h3>
+            </section>
+        </div>
+        <div id="map"></div>
+    </main>
+    <footer>
+        <p>Maria Lilian Gonzales Inga
+            Huancayo - Perú
+        </p>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="scripts/map.js" defer></script>
+
+</body>
+
+</html>

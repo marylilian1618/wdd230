@@ -1,0 +1,180 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex img {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+/*--------------------------------*/
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: rgb(90, 1, 56);
+    color: black;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #ca73ca;
+    color: #333;
+    font-weight: 700;
+}
+
+/*wayfind symbols*/
+.icon::before {
+    content: "🏠";
+}
+
+.icon1::before {
+    content: "😄";
+}
+
+.icon2::before {
+    content: "🎉";
+}
+
+.icon3::before {
+    content: "❤️";
+}
+
+.icon4::before {
+    content: "📖";
+}
+
+/*toggle*/
+.open a {
+    display: block;
+}
+
+/*--------------------------------*/
+nav a {
+    padding: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: #9c00a1;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* For markers*/
+::marker {
+    color: #9c00a1;
+    font-size: 2rem;
+}
+
+ol {
+    list-style: numeric;
+    margin-left: 2rem;
+}
+
+li::before {
+    content: "\2705";
+}
+
+
+.grid02 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+}

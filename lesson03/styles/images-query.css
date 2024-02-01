@@ -1,0 +1,10 @@
+@media screen and (min-width: 500px) {
+
+    body {
+        background-color: rgb(211, 0, 63);
+    }
+}
+div{
+    grid-template-columns:1fr 1fr;
+    
+}
