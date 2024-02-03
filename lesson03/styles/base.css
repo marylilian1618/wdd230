@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,800&family=Outfit:wght@200&family=Protest+Guerrilla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
@@ -7,7 +7,7 @@ header {
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
-    font-family: 'Protest Guerrilla', sans-serif;
+    font-family: 'Bree Serif', serif;
 }
 
 
@@ -43,7 +43,7 @@ main {
 }
 
 .typography h1 {
-    font-family: 'Protest Guerrilla', sans-serif;
+    font-family: 'Bree Serif', serif;
 }
 
 .typography h2 {
