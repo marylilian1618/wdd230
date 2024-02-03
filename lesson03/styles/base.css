@@ -3,18 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
 header {
-    background-color: rgb(255, 0, 76);
-    color: #fff;
+    background-color: #e94848;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Protest Guerrilla', sans-serif;
 }
+
 
 main {
     display: grid;
     grid-template-columns: 1fr;
     font-family: 'Inter', sans-serif;
     margin: 30px;
+
 }
 
 .justify {
@@ -22,7 +24,7 @@ main {
 }
 
 .palette h1 {
-    color: #F28585;
+    color: #e94848;
 }
 
 .palette h2 {
@@ -30,7 +32,7 @@ main {
 }
 
 .palette p {
-    color: #B7E5B4;
+    color: #209c69;
 }
 
 .background {
@@ -53,9 +55,15 @@ main {
 }
 
 section {
-    border: 1px solid #ccc;
+    border: 7px solid #FFA447;
     padding: 50px;
     margin: 20px 0;
+}
+
+section h3 {
+    font-family: 'Crimson Text', serif;
+    color: #f38618;
+    font-size: x-large;
 }
 
 section img {
@@ -63,17 +71,15 @@ section img {
     height: auto;
 }
 
-h3 {
-    color: #333;
-}
+
 
 main p {
     color: #666;
 }
 
 footer {
-    background-color: rgb(47, 0, 255);
-    color: #fff;
+    background-color: #B7E5B4;
+    color: black;
     text-align: center;
     padding: 20px;
     font-family: 'Inter', sans-serif;
