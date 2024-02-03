@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,800&family=Outfit:wght@200&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+header {
+    background-color: rgb(255, 0, 76);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Inter', sans-serif;
+    margin: 30px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.palette h1 {
+    color: #F28585;
+}
+
+.palette h2 {
+    color: #FFA447;
+}
+
+.palette p {
+    color: #B7E5B4;
+}
+
+.background {
+    width: 150px;
+    height: 150px;
+    background-color: #FFFC9B;
+
+}
+
+.typography h1 {
+    font-family: 'Protest Guerrilla', sans-serif;
+}
+
+.typography h2 {
+    font-family: 'Crimson Text', serif;
+}
+
+.typography p {
+    font-family: 'Kanit', sans-serif;
+}
+
+section {
+    border: 1px solid #ccc;
+    padding: 50px;
+    margin: 20px 0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    color: #333;
+}
+
+main p {
+    color: #666;
+}
+
+footer {
+    background-color: rgb(47, 0, 255);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+}
