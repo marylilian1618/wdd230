@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huancayo Chamber of Commerce</title>
+    <meta name="description" content="The Chamber of Commerce Home Page.">
+    <meta name="author" content="Maria Lilian Gonzales Inga">
+    <!--Normalize.css goes first than the others css-->
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <!--normalize.css minimized-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,800&family=Outfit:wght@200&family=Protest+Guerrilla&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="icon" href="images/icon.ico">
+    <!--Social media-->
+    <meta property="og:title" content="Huancayo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://estudiantes.ucontinental.edu.pe/wp-content/uploads/2019/02/foto-de-huancayo-peru-uc-portada.jpg">
+    <meta property="og:url" content=https://marylilian1618.github.io/wdd230/chamber/index.html>
+</head>
+
+<body>
+    <header>
+        <section class="flex">
+            <img src="images/image-peru.jpg" alt="Image Peru">
+            <h1>Huancayo Chamber of Commerce</h1>
+        </section>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html" title="Home" class="icon">Home</a>
+            <a href="" title="Discover" class="icon1">Discover</a>
+            <a href="" title="Directory" class="icon2">Directory</a>
+            <a href="" title="Join" class="icon3">Join</a>
+        </nav>
+    </header>
+    <img class="home" src="images/huancayo.jpg" alt="huancayo-image01">
+    <h2 class="text">Join the Chamber</h2>
+    <main>
+        <div class="general-div">
+            <div class="grid02">
+                <section class="card">
+                    <h2>Events</h2>
+                    <ul>
+                        <li>
+                            <h3>Business Seminars and Conferences</h3>
+                            <p>Seminars and conferences featuring guest speakers and experts on topics of interest to
+                                the
+                                local business community, such as entrepreneurship, finance, and sustainable business
+                                practices.</p>
+                        </li>
+                        <li>
+                            <h3>Business Networking Breakfast</h3>
+                            <p>Breakfast event where local business owners and professionals can gather to network,
+                                exchange
+                                ideas, and discuss potential collaborations.</p>
+                        </li>
+                        <li>
+                            <h3>Business Awards Ceremony</h3>
+                            <p>Recognize outstanding businesses and entrepreneurs in Huancayo with an annual awards
+                                ceremony. Categories include "Best Small Business," "Innovation Award," and "Community
+                                Impact Award."</p>
+                        </li>
+                        <li>
+                            <h3><b>Trade Fairs and Expos</b></h3>
+                            <p> Host trade fairs or expos showcasing local businesses and their products/services. This
+                                provides an opportunity for businesses to promote themselves to a wider audience and
+                                potentially attract new customers or partners.</p>
+                        </li>
+                    </ul>
+                </section>
+                <img src="images/huancayoi.jpg" alt="huancayo-image02">
+                <section class="card">
+                    <h2>Weather</h2>
+                </section>
+            </div>
+            <div class="grid03">
+                <section class="card">
+                    <h3 class="icon4">XYZ Tech Solutions</h3>
+                    <p>Are you seeking cutting-edge technology solutions for your business? Look no further than XYZ
+                        Tech
+                        Solutions! With over a decade of experience in providing innovative IT services</p>
+                    <img src="images/information-technology.jpg" alt="information-technology">
+                </section>
+                <section class="card">
+                    <h3 class="icon5">Green Valley Landscaping</h3>
+                    <p>Transform your outdoor space into a breathtaking oasis with Green Valley Landscaping! As a
+                        premier
+                        landscaping company, we offer a wide range of services, including landscape design,
+                        installation,
+                        and maintenance.</p>
+                    <img src="images/landscaping.jpg" alt="landscaping">
+                </section>
+                <section class="card">
+                    <h3 class="icon6">Delightful Bakes Bakery</h3>
+                    <p>Indulge your sweet tooth with the delectable treats from Delightful Bakes Bakery! From
+                        mouthwatering
+                        cupcakes to elegant wedding cakes, our bakery offers a wide array of freshly baked goods made
+                        with
+                        the finest ingredients.</p>
+                    <img src="images/bakery.jpg" alt="bakery">
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Maria Lilian Gonzales Inga</p>
+        <p>Project for WDD 230</p>
+        <h3><b>Contact</b></h3>
+        <a href="" title="Join" class="icon3">E-mail</a>
+        <h3><b>Location</b></h3>
+        <div id="map"></div>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="/scripts/getdates.js" defer></script>
+    <script src="/scripts/menu.js" defer></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <script src="/scripts/map.js" defer></script>
+</body>
+
+</html>

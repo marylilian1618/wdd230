@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,800&family=Outfit:wght@200&family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+/*header*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex img {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+main p {
+    text-align: justify;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* all main img*/
+main img {
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.home {
+    position: relative;
+    display: flex;
+
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+/*--------------------------------*/
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: rgb(226, 72, 72);
+    color: black;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #ca73ca;
+    color: #333;
+    font-weight: 700;
+}
+
+/*wayfind symbols*/
+.icon::before {
+    content: "🏠";
+}
+
+.icon1::before {
+    content: "😄";
+}
+
+.icon2::before {
+    content: "🎉";
+}
+
+.icon3::before {
+    content: "❤️";
+}
+
+.icon4::before {
+    content: "💻";
+}
+
+.icon5::before {
+    content: "🌳";
+}
+
+.icon6::before {
+    content: "🎂";
+}
+
+/*toggle*/
+.open a {
+    display: block;
+}
+
+/*--------------------------------*/
+nav a {
+    padding: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FFFC9B;
+}
+
+.general-div {
+    background-color: rgb(255, 164, 71);
+}
+
+header {
+    background-color: #F28585;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Bree Serif', serif;
+    margin: 20px;
+}
+
+header img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+
+h1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 0;
+}
+
+h2 {
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+}
+
+h3 {
+    color: rgb(226, 72, 72);
+    font-size: 1.3rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* For markers*/
+
+
+.grid02 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 40px;
+}
+
+.grid03 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 40px;
+
+}
+
+.card {
+    background-color: rgb(183, 229, 180);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFC9B;
+}
+
+
+footer {
+    background-color: rgb(183, 229, 180);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+}
