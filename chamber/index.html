@@ -29,6 +29,8 @@
     <meta property="og:image"
         content="https://estudiantes.ucontinental.edu.pe/wp-content/uploads/2019/02/foto-de-huancayo-peru-uc-portada.jpg">
     <meta property="og:url" content=https://marylilian1618.github.io/wdd230/chamber/index.html>
+    <!--Font awesome script-->
+    <script src="https://kit.fontawesome.com/a94cfddab4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -38,12 +40,18 @@
             <h1>Huancayo Chamber of Commerce</h1>
         </section>
         <button id="menu"></button>
-        <nav class="navigation">
-            <a href="index.html" title="Home" class="icon">Home</a>
-            <a href="" title="Discover" class="icon1">Discover</a>
-            <a href="" title="Directory" class="icon2">Directory</a>
-            <a href="" title="Join" class="icon3">Join</a>
-        </nav>
+        <div class="flex">
+            <nav class="navigation">
+                <a href="index.html" title="Home" class="icon">Home</a>
+                <a href="" title="Discover" class="icon1">Discover</a>
+                <a href="" title="Directory" class="icon2">Directory</a>
+                <a href="" title="Join" class="icon3">Join</a>
+            </nav>
+            <button class="switch" id="switch">
+                <span><i class="fa-solid fa-sun"></i> </span>
+                <span><i class="fa-solid fa-moon"></i></span>
+            </button>
+        </div>
     </header>
     <div class="home">
         <img src="images/huancayo-image01.jpg" alt="huancayo-image01">
@@ -126,6 +134,7 @@
         <p id="year"></p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/switch.js"></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
