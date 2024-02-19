@@ -4,7 +4,7 @@ function calculateWindChill() {
     //condicional 
     if (temperatureInput <= 50 && windSpeedInput > 3.0) {
         var windChill = calculateWindChillValue(temperatureInput, windSpeedInput);
-        document.getElementById('windChillResult').innerText = 'Wind Chill: ' + windChill.toFixed(2) + ' m/s';
+        document.getElementById('windChillResult').innerText = 'Wind Chill: ' + windChill.toFixed(2) + ' F°';
     } else {
         //No se cumple el si
         document.getElementById('windChillResult').innerText = 'N/A';
