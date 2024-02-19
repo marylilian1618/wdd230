@@ -26,7 +26,7 @@
 <body>
     <header>
         <section class="flex">
-            <img src="images/image01.jpg" alt="My photo">
+            <img src="images/image01.webp" alt="My photo">
             <h1>Maria Lilian Gonzales Inga</h1>
         </section>
         <button id="menu"></button>
@@ -40,6 +40,16 @@
         </nav>
     </header>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="/lesson06/images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="/lesson06/images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="/lesson06/images/hero-large.webp" alt="table setting" width="1500" height="750">
+            </picture>
+            <div class="heroname">
+                <p>Arequipa temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="grid02">
             <section class="card">

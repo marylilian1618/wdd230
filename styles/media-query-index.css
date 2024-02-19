@@ -4,6 +4,19 @@
         color: aliceblue;
     }
 
+    /* temple name*/
+    .heroname {
+        top: 30px;
+        left: 30px;
+        height: 30px;
+    }
+
+    .heroname p {
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
+
     h1 {
         font-size: 2.5rem;
         margin-left: 0;
