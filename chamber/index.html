@@ -53,14 +53,15 @@
             </button>
         </div>
     </header>
-    <div class="home">
-        <picture>
-            <source srcset="images/provisional-small.webp" media="(max-width: 500px)">
-            <source srcset="images/provisional-medium.webp" media="(max-width: 1000px)">
-            <img src="images/provisional.webp" alt="table setting" width="1500" height="750">
-        </picture>
-    </div>
     <main>
+        <div class="home">
+            <picture>
+                <source srcset="images/provisional-small.webp" media="(max-width: 500px)">
+                <source srcset="images/provisional-medium.webp" media="(max-width: 1000px)">
+                <img src="images/provisional.webp" alt="table setting" width="100%" height="auto">
+            </picture>
+            <h2 class="text">Join the Chamber</h2>
+        </div>
         <div class="general-div">
             <div class="grid02">
                 <section class="card">
@@ -96,6 +97,10 @@
                 <img src="images/huancayo-image02.webp" alt="huancayo-image02">
                 <section class="card">
                     <h2>Weather</h2>
+                    <label for="temperature">Temperature (°F): <input type="number" id="temperature"></label><br>
+                    <label for="windSpeed">Wind Speed (mph): <input type="number" id="windSpeed"></label><br>
+                    <button onclick="calculateWindChill()">Calculate Wind Chill</button><br>
+                    <span id="windChillResult"></span>
                 </section>
             </div>
             <div class="grid03">
@@ -137,6 +142,7 @@
         <p id="year"></p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/switch.js"></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
