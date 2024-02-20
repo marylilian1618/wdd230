@@ -11,6 +11,10 @@
     padding-left: 50px;
 }
 
+.map {
+    align-content: center;
+}
+
 /* class hero*/
 .hero {
     margin: 30px;
@@ -76,10 +80,11 @@
 
 .navigation a {
     display: none;
-    padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: #fff;
+    margin: 0 10px;
+    padding: 10px;
 }
 
 .navigation a:hover {
@@ -115,9 +120,6 @@
 }
 
 /*--------------------------------*/
-nav a {
-    padding: 10px;
-}
 
 body {
     font-family: 'Arial', sans-serif;
@@ -162,11 +164,6 @@ nav ul {
     padding: 0;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 10px;
-}
 
 main {
     max-width: 800px;

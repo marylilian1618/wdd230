@@ -9,18 +9,9 @@
     <meta name="author" content="Maria Lilian Gonzales Inga">
     <!--Normalize.css goes first than the others css-->
     <link rel="stylesheet" href="styles/normalize.css">
-    <!--normalize.css minimized-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,800&family=Outfit:wght@200&family=Protest+Guerrilla&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
     <!--Favicon-->
     <link rel="icon" href="images/icon.ico">
     <!--Social media-->
@@ -138,7 +129,10 @@
         <h3><b>Contact</b></h3>
         <a href="" title="Join" class="colora icon3">E-mail</a>
         <h3><b>Location</b></h3>
-        <div id="map"></div>
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62430.84069984873!2d-75.24383893026193!3d-12.048506276085751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e964104fb82f1%3A0xf8e45b61c55982fa!2sHuancayo!5e0!3m2!1ses-419!2spe!4v1708398704889!5m2!1ses-419!2spe"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p id="year"></p>
         <p id="lastModified"></p>
     </footer>
@@ -146,9 +140,6 @@
     <script src="scripts/switch.js"></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
-    <script src="scripts/map.js" defer></script>
 </body>
 
 </html>

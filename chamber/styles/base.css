@@ -10,7 +10,6 @@
 
 }
 
-
 .flex img {
     padding-right: 50px;
     padding-left: 50px;
@@ -25,6 +24,12 @@ img {
     height: 500px;
 }
 
+/*map*/
+.map {
+    align-content: center;
+}
+
+/*-----*/
 /* switch dark mode*/
 .switch {
     background: #343d5b;
