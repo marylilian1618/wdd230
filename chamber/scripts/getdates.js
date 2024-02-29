@@ -8,3 +8,4 @@ document.addEventListener('DOMContentLoaded', function () {
     const options = { year: 'numeric', month: 'long', day: 'numeric' };
     lastModifiedElement.textContent = `Last modified: ${lastModifiedDate.toLocaleDateString('en-US', options)}`;
 });
+

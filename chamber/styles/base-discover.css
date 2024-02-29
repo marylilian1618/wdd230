@@ -15,35 +15,6 @@
     padding-left: 50px;
 }
 
-main p {
-    text-align: justify;
-}
-
-img {
-    width: 100%;
-    height: 500px;
-}
-
-/*map*/
-.map-container {
-    position: relative;
-    width: 70%;
-    padding-top: 25%;
-    /* for contain our map 16:9 aspect ratio (divide 9 by 16 = 0.5625) */
-}
-
-.map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    margin-right: 20%;
-    margin-left: 20%;
-
-}
-
 /*-----*/
 /* switch dark mode*/
 .switch {
@@ -84,8 +55,6 @@ img {
     border-radius: 100px;
     transition: .3s ease all;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
-
-
 }
 
 .switch.active {
@@ -141,30 +110,17 @@ body.dark #menu::before {
     color: #f1f1f1;
 }
 
-/*----------------------*/
-/* all main img*/
-main img {
-    max-width: 100%;
-    height: auto;
-    align-items: center;
+body.dark h2 {
+    color: #ca73ca;
 }
 
-.home {
-    position: relative;
-    display: flex;
-
+body.dark .main-image p {
+    background-color: #78017c;
+    color: white;
 }
 
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 20px;
-    color: black;
+body.dark #message {
+    color: white;
 }
 
 /*--------------------------------*/
@@ -180,6 +136,7 @@ main img {
 
 #menu::before {
     content: "☰";
+    color: orange;
 }
 
 #menu.open::before {
@@ -244,6 +201,23 @@ main img {
 }
 
 /*--------------------------------*/
+/*for markers*/
+::marker {
+    color: #78017c;
+    font-size: 2rem;
+}
+
+/* all main img*/
+main img {
+    height: auto;
+    align-items: center;
+    width: 100%;
+}
+
+main p {
+    text-align: justify;
+}
+
 nav a {
     padding: 10px;
 }
@@ -251,11 +225,6 @@ nav a {
 body {
     font-family: 'Arial', sans-serif;
     background-color: #FFFC9B;
-}
-
-.general-div {
-    background-color: orange;
-    border-radius: 10px;
 }
 
 header {
@@ -274,15 +243,14 @@ header img {
     height: 200px;
 }
 
-
 h1 {
     margin: 10px 0;
     font-size: 1.5rem;
     text-align: center;
-    margin-left: 0;
 }
 
 h2 {
+    color: #78017c;
     font-size: 1rem;
     text-align: center;
     font-family: 'Crimson Text', serif;
@@ -292,6 +260,10 @@ h3 {
     color: #b30000;
     font-size: 1.3rem;
     font-family: 'Kanit', sans-serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 nav ul {
@@ -311,30 +283,55 @@ main {
     padding: 20px;
 }
 
-/* For markers*/
-
-
-.grid02 {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 40px;
-}
-
-.grid03 {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 40px;
-
-}
-
 .card {
+
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #FFFC9B;
+    background-color: #ffcfcf;
+    color: #000;
+
 }
 
+.card image {
+    height: auto;
+    width: auto;
+}
+
+/* discover css*/
+.main-image p {
+    background-color: #f9d55b;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.sidebar {
+    background-color: orange;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.main-image {
+    padding: 50px;
+
+}
+
+.main-image img:hover {
+    box-shadow: 0 0 50px orange;
+}
+
+#message {
+    font-size: large;
+}
+
+/* footer */
 
 footer {
     background-color: rgb(183, 229, 180);
