@@ -48,22 +48,22 @@
             <label>Confirm Password*<input type="password" id="password2" name="password2" required></label>
             <label>Email*<input type="email" id="email" name="email" placeholder="Your byui email address"
                     title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+            <label for="r">Range</label>
             <div id="rangevalue">0</div>
-            <label>Range<input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
-                <datalist id="rangevalues">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </datalist>
-            </label>
+            <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
             <input type="submit" value="Send Information">
         </form>
     </main>
