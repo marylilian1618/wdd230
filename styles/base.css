@@ -130,6 +130,10 @@
     content: "📖";
 }
 
+.icon5::before {
+    content: "😎";
+}
+
 /*toggle*/
 .open a {
     display: block;
