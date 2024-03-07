@@ -123,6 +123,19 @@ body.dark #message {
     color: white;
 }
 
+/*form*/
+body.dark label {
+    color: #ca73ca;
+}
+
+body.dark form p {
+    color: #ca73ca;
+}
+
+body.dark h1 {
+    color: rgb(224, 247, 255);
+}
+
 /*--------------------------------*/
 #menu {
     font-size: 1.5rem;
@@ -350,4 +363,9 @@ footer h3 {
         width: 70px;
         height: 70px;
     }
+}
+
+/*form thanks*/
+.center {
+    text-align: center;
 }

@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huancayo Chamber of Commerce</title>
-    <meta name="description" content="The Chamber of Commerce Home Page.">
+    <title>Huancayo Chamber of Commerce and Discover</title>
+    <meta name="description" content="The Chamber of Commerce Form.">
     <meta name="author" content="Maria Lilian Gonzales Inga">
     <!--Normalize.css goes first than the others css-->
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base-discover.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
+    <link rel="stylesheet" href="styles/base-form.css">
     <!--Favicon-->
     <link rel="icon" href="images/icon.ico">
     <!--Social media-->
-    <meta property="og:title" content="Huancayo Chamber of Commerce">
+    <meta property="og:title" content="Huancayo Chamber of Commerce Form">
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://estudiantes.ucontinental.edu.pe/wp-content/uploads/2019/02/foto-de-huancayo-peru-uc-portada.jpg">
@@ -34,7 +34,7 @@
         <div class="flex">
             <nav class="navigation">
                 <a href="index.html" title="Home" class="icon">Home</a>
-                <a href="discover.html" title="Discover" class="icon1">Discover</a>
+                <a href="" title="Discover" class="icon1">Discover</a>
                 <a href="" title="Directory" class="icon2">Directory</a>
                 <a href="" title="Join" class="icon3">Join</a>
             </nav>
@@ -45,7 +45,106 @@
         </div>
     </header>
     <main>
+        <section class="grid">
+            <div>
+                <h1>My Form</h1>
+                <form method="get" action="thankyou.html" class="wf1">
+                    <label>First name*<input type="text" id="fname" name="fname" required>
+                    </label>
+                    <label>Last name*<input type="text" id="lname" name="lname" required></label>
+                    <label>Title or position*<input type="text" id="title" name="title" required
+                            pattern="[A-Za-z -]{7,}" title="At least seven characters"></label>
+                    <label>Email*<input type="email" id="email" name="email" placeholder="Your byui email address"
+                            title="example@email.com" required></label>
+                    <label>Phone*<input type="tel" id="telephone" name="telephone" required></label>
+                    <label>Business/Organization's name*<input type="text" id="bname" name="bname" required></label>
+                    <p>Membership level</p>
+                    <label><input type="radio" name="Membership" value="NPMembership">NP Membership</label>
+                    <label><input type="radio" name="Membership" value="BronzeMembership">Bronze Membership</label>
+                    <label><input type="radio" name="Membership" value="SilverMembership">Silver Membership</label>
+                    <label><input type="radio" name="Membership" value="GoldMembership">Gold Membership</label>
+                    <label>Description<textarea id="description" name="description"></textarea></label>
+                    <input type="hidden" name="dtime" id="dtime">
+                    <input type="submit" value="Send Information">
+                </form>
+            </div>
+            <div class="membership">
+                <h2>NP Membership (Non-Profit Membership)</h2>
+                <div class="npm">
+                    <div>
+                        <h3>Description</h3>
+                        <p>Designed specifically for non-profit organizations.</p>
+                    </div>
+                    <div>
+                        <h3>Fee</h3>
+                        <p>No fee required.</p>
+                    </div>
+                    <div>
+                        <h3>Benefits</h3>
+                        <p>Basic membership benefits tailored to the needs and interests of non-profit organizations,
+                            such
+                            as access to resources, networking opportunities, and possibly discounted or free attendance
+                            to
+                            certain events.</p>
+                    </div>
+                </div>
+                <h2>Bronze Membership</h2>
+                <div class="bm">
+                    <div>
+                        <h3>Description</h3>
+                        <p>Entry-level membership tier.</p>
+                    </div>
+                    <div>
+                        <h3>Fee</h3>
+                        <p>Moderate or nominal fee.</p>
+                    </div>
+                    <div>
+                        <h3>Benefits</h3>
+                        <p>Basic benefits package, which may include access to resources, limited networking
+                            opportunities,
+                            and possibly discounts on select services or events.</p>
+                    </div>
+                </div>
+                <h2>Silver Membership</h2>
+                <div class="sm">
+                    <div>
+                        <h3>Description</h3>
+                        <p>Mid-tier membership level.</p>
+                    </div>
+                    <div>
+                        <h3>Fee</h3>
+                        <p>Higher than Bronze, but still affordable.</p>
+                    </div>
+                    <div>
+                        <h3>Benefits</h3>
+                        <p>Enhanced benefits compared to Bronze, such as increased access to resources, expanded
+                            networking
+                            opportunities, and additional perks like discounted rates for events or services.</p>
+                    </div>
+                </div>
+                <h2>Gold Membership</h2>
+                <div class="gm">
+                    <div>
+                        <h3>Description</h3>
+                        <p>Premium membership level.</p>
+                    </div>
+                    <div>
+                        <h3>Fee</h3>
+                        <p> Highest level of membership fee.</p>
+                    </div>
+                    <div>
+                        <h3>Benefits</h3>
+                        <p>This package include exclusive access to specialized resources, priority networking
+                            opportunities,
+                            premium advertising options on our website, substantial
+                            discounts on events or services, and personalized training sessions or priority customer
+                            service.</p>
+                    </div>
+                </div>
 
+            </div>
+
+        </section>
     </main>
     <footer>
         <p>Maria Lilian Gonzales Inga</p>
@@ -56,10 +155,11 @@
         <p id="year"></p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/switch.js"></script>
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/form.js"></script>
+
 </body>
 
 </html>
