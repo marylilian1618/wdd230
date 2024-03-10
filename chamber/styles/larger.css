@@ -45,4 +45,16 @@
         width: 150px;
         height: 150px;
     }
+
+    /*form*/
+    .grid {
+        grid-template-columns: 500px 700px;
+    }
+
+    .npm,
+    .bm,
+    .sm,
+    .gm {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
