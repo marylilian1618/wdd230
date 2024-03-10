@@ -1,0 +1,43 @@
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    /* grid*/
+    .grid {
+        grid-template-columns: 500px 700px;
+    }
+
+    .npm,
+    .bm,
+    .sm,
+    .gm {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+}
