@@ -1,0 +1,30 @@
+{
+    "wardInformation": {
+        "familyName": "Inga",
+        "moveInDate": "2020-03-11",
+        "numberOfPeople": 7,
+        "visitedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Maria Inga",
+                "gender": "Female",
+                "birthdate": "2005-01-01"
+            },
+            {
+                "name": "Lilian Inga",
+                "gender": "Female",
+                "birthdate": "1979-02-13"
+            },
+            {
+                "name": "Charlie Inga",
+                "gender": "Male",
+                "birthdate": "1981-01-18"
+            },
+            {
+                "name": "Mil Inga",
+                "gender": "Female",
+                "birthdate": "1974-01-08"
+            }
+        ]
+    }
+}
