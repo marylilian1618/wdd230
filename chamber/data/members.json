@@ -1,0 +1,84 @@
+{
+  "directory": [
+    {
+      "company01": {
+        "names": "01",
+        "addresses": "h",
+        "phone number": "h",
+        "website": "h",
+        "image": "h",
+        "membership": "h"
+      }
+    },
+    {
+      "company02": {
+        "names": "01",
+        "addresses": "h",
+        "phone number": "h",
+        "website": "h",
+        "image": "h",
+        "membership": "h"
+      }
+    },
+    {
+      "company03": {
+        "names": "01",
+        "addresses": "h",
+        "phone number": "h",
+        "website": "h",
+        "image": "h",
+        "membership": "h"
+      }
+    },
+    {
+      "company04": {
+        "names": "01",
+        "addresses": "h",
+        "phone number": "h",
+        "website": "h",
+        "image": "h",
+        "membership": "h"
+      }
+    },
+    {
+      "company05": {
+        "names": "01",
+        "addresses": "h",
+        "phone number": "h",
+        "website": "h",
+        "image": "h",
+        "membership": "h"
+      }
+    },
+    {
+      "company06": {
+        "names": "01",
+        "addresses": "h",
+        "phone number": "h",
+        "website": "h",
+        "image": "h",
+        "membership": "h"
+      }
+    },
+    {
+      "company07": {
+        "names": "01",
+        "addresses": "h",
+        "phone number": "h",
+        "website": "h",
+        "image": "h",
+        "membership": "h"
+      }
+    },
+    {
+      "company08": {
+        "names": "01",
+        "addresses": "h",
+        "phone number": "h",
+        "website": "h",
+        "image": "h",
+        "membership": "h"
+      }
+    }
+  ]
+}

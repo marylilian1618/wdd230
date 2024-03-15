@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huancayo Chamber of Commerce</title>
+    <meta name="description" content="The Chamber of Commerce Home Page.">
+    <meta name="author" content="Maria Lilian Gonzales Inga">
+    <!--Normalize.css goes first than the others css-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--Favicon-->
+    <link rel="icon" href="images/icon.ico">
+    <!--Social media-->
+    <meta property="og:title" content="Huancayo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://estudiantes.ucontinental.edu.pe/wp-content/uploads/2019/02/foto-de-huancayo-peru-uc-portada.jpg">
+    <meta property="og:url" content="https://marylilian1618.github.io/wdd230/chamber">
+    <!--Font awesome script-->
+    <script src="https://kit.fontawesome.com/a94cfddab4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <section class="flex">
+            <img src="images/image-peru.webp" alt="Image Peru">
+            <h1>Huancayo Chamber of Commerce</h1>
+        </section>
+        <button id="menu"></button>
+        <div class="flex">
+            <nav class="navigation">
+                <a href="index.html" title="Home" class="icon">Home</a>
+                <a href="discover.html" title="Discover" class="icon1">Discover</a>
+                <a href="" title="Directory" class="icon2">Directory</a>
+                <a href="join.html" title="Join" class="icon3">Join</a>
+            </nav>
+            <button class="switch" id="switch">
+                <span><i class="fa-solid fa-sun"></i> </span>
+                <span><i class="fa-solid fa-moon"></i></span>
+            </button>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+        <p>Maria Lilian Gonzales Inga</p>
+        <p>Project for WDD 230</p>
+        <h3><b>Contact</b></h3>
+        <a href="" title="Join" class="colora icon3">E-mail</a>
+        <h3><b>Location</b></h3>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/switch.js"></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+</body>
+
+</html>
