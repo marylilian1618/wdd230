@@ -1,84 +1,68 @@
 {
   "directory": [
     {
-      "company01": {
-        "names": "01",
-        "addresses": "h",
-        "phone number": "h",
-        "website": "h",
-        "image": "h",
-        "membership": "h"
-      }
+      "names": "ABC Inc.",
+      "addresses": "123 Main Street",
+      "number": "555-1234",
+      "website": "www.abc.com",
+      "image": "images/company01.webp",
+      "membership": "Non profit membership"
     },
     {
-      "company02": {
-        "names": "01",
-        "addresses": "h",
-        "phone number": "h",
-        "website": "h",
-        "image": "h",
-        "membership": "h"
-      }
+      "names": "XYZ Corp.",
+      "addresses": "456 Elm Street",
+      "number": "555-5678",
+      "website": "www.xyzcorp.com",
+      "image": "images/company02.webp",
+      "membership": "Bronze Membership"
     },
     {
-      "company03": {
-        "names": "01",
-        "addresses": "h",
-        "phone number": "h",
-        "website": "h",
-        "image": "h",
-        "membership": "h"
-      }
+      "names": "LMN Ltd.",
+      "addresses": "789 Oak Street",
+      "number": "555-9012",
+      "website": "www.lmn.com",
+      "image": "images/company03.webp",
+      "membership": "Silver Membership"
     },
     {
-      "company04": {
-        "names": "01",
-        "addresses": "h",
-        "phone number": "h",
-        "website": "h",
-        "image": "h",
-        "membership": "h"
-      }
+      "names": "PQR Co.",
+      "addresses": "101 Pine Street",
+      "number": "555-3456",
+      "website": "www.pqrco.com",
+      "image": "images/company04.webp",
+      "membership": "Gold Membership"
     },
     {
-      "company05": {
-        "names": "01",
-        "addresses": "h",
-        "phone number": "h",
-        "website": "h",
-        "image": "h",
-        "membership": "h"
-      }
+      "names": "EFG Enterprises",
+      "addresses": "111 Oak Avenue",
+      "number": "555-7890",
+      "website": "www.efgenterprises.com",
+      "image": "images/company05.webp",
+      "membership": "Non profit membership"
     },
     {
-      "company06": {
-        "names": "01",
-        "addresses": "h",
-        "phone number": "h",
-        "website": "h",
-        "image": "h",
-        "membership": "h"
-      }
+      "names": "RST Solutions",
+      "addresses": "222 Maple Drive",
+      "number": "555-2345",
+      "website": "www.rstsolutions.com",
+      "image": "images/company06.webp",
+      "membership": "Bronze Membership"
     },
     {
-      "company07": {
-        "names": "01",
-        "addresses": "h",
-        "phone number": "h",
-        "website": "h",
-        "image": "h",
-        "membership": "h"
-      }
+      "names": "UVW Innovations",
+      "addresses": "333 Cedar Lane",
+      "number": "555-6789",
+      "website": "www.uvwinnovations.com",
+      "image": "images/company07.webp",
+      "membership": "Silver Membership"
     },
     {
-      "company08": {
-        "names": "01",
-        "addresses": "h",
-        "phone number": "h",
-        "website": "h",
-        "image": "h",
-        "membership": "h"
-      }
+      "names": "GHI Group",
+      "addresses": "444 Walnut Road",
+      "number": "555-0123",
+      "website": "www.ghigroup.com",
+      "image": "images/company08.webp",
+      "membership": "Gold Membership"
     }
   ]
 }
