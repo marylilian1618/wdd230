@@ -31,7 +31,7 @@ const displayMembers = (directory) => {
 
         //build the h2 content to show prophet name
         tadress.textContent = `Address`;
-        address.textContent = `${member.address}`;
+        address.textContent = `${member.addresses}`;
         tnumber.textContent = `Phone Number`;
         number.textContent = `${member.number}`;
         twebsite.textContent = `Website`;
