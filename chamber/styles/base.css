@@ -528,36 +528,86 @@ input[type="submit"]:hover {
 }
 
 /* ------------ discover html---------------------*/
-#grid {
-    border: 5px solid rgb(229, 242, 247);
-    box-shadow: 0 0 20px lightblue;
+.discover-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
     padding: 20px;
 }
 
-#grid section {
-    border: 1px solid #7595ff;
-    background-color: rgb(239, 251, 255);
+.discover-grid section {
+    border: 15px solid orange;
+    background-color: #ffcfcf;
     border-radius: 8px;
     padding: 20px;
 }
 
-#grid h3 {
+.discover-grid h3 {
     text-align: center;
-    font-size: 1.5rem;
     margin-bottom: 10px;
-    color: blue;
 }
 
-#grid p {
+.discover-grid p {
     text-align: center;
 }
 
-#grid img {
+.discover-grid img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 0 20px lightblue;
+    box-shadow: 0 0 20px #a79a68;
+}
+
+/*discover list*/
+.discover-list {
+    padding: 20px;
+
+}
+
+.discover-list section {
+
+    padding: 3px;
+    margin: 20px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.discover-list section:nth-child(odd) {
+    background-color: #ffcfcf;
+}
+
+.discover-list section:nth-child(even) {
+    background-color: #ffbd8f;
+}
+
+.discover-list p {
+    text-align: center;
+    margin: 10px;
+    display: inline-block;
+}
+
+/*menu*/
+.menu {
+    text-align: center;
+}
+
+.menu button {
+    padding: 12px 24px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: #d82a2a;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #a79a68;
+
+}
+
+.menu button:hover {
+    background-color: #b30000;
+}
+
+.menu button:focus {
+    outline: none;
 }

@@ -28,3 +28,4 @@ function displayLinks(lessons) {
     });
 }
 getLinks();
+
