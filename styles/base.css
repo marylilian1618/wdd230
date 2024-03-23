@@ -232,6 +232,12 @@ footer {
     width: 100%;
 }
 
+#weather-icon,
+#current-temp,
+#description-temp {
+    display: inline-block;
+}
+
 @media (max-width: 600px) {
     header img {
         width: 70px;
