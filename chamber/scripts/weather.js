@@ -27,14 +27,19 @@ apiFetch();
 function displayResults(data) {
     let temperature = data.list[0].main.temp.toFixed()
     let windSpeed = data.list[0].wind.speed;
+    const image = document.createElement('img');
+
     windspeed.textContent = `${windSpeed}mph`
     currentTemp.textContent = `${temperature}°F`;
+
     const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
+    image.setAttribute('src', iconsrc);
+    image.setAttribute('alt', "icon");
+    image.style.width = '100px';
+    image.style.height = '100px';
+    weatherIcon.appendChild(image);
+
     let desc = data.list[0].weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', "icon");
-    weatherIcon.style.width = '100px';
-    weatherIcon.style.height = '100px';
     captionDesc.textContent = ` ${desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}`;
 
     function calculateWindChill(tem, windS) {
