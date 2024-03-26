@@ -1,26 +1,22 @@
-// Check if the current day is Monday, Tuesday, or Wednesday
-function isBannerDay() {
-    const today = new Date();
-    const dayOfWeek = today.getDay(); // 0 = Sunday, 1 = Monday, ..., 6 = Saturday
-    return (dayOfWeek >= 1 && dayOfWeek <= 3); // Monday, Tuesday, or Wednesday
-}
+const dayOfWeek = new Date().getDay();
 
-// Function to close the banner
-function closeBanner() {
-    document.getElementById("banner").style.display = "none";
-}
+if (dayOfWeek >= 1 && dayOfWeek <= 3) {
+    document.addEventListener('DOMContentLoaded', () => {
+        let banner = document.querySelector('#banner');
+        let container = document.createElement('div');
+        let message = document.createElement('h3');
+        let button = document.createElement('button');
 
-// Function to show or hide the banner based on the current day
-function showHideBanner() {
-    const banner = document.getElementById("banner");
-    if (isBannerDay()) {
-        banner.classList.add("show");
-    } else {
-        banner.classList.remove("show");
-    }
-}
+        message.textContent = 'Please join us at the chamber of commerence meet and greet this Wednesday at 7:00 PM'
+        button.textContent = '❌'
 
-// Run the showHideBanner function when the page loads
-window.onload = function () {
-    showHideBanner();
-};
+        container.appendChild(message);
+        container.appendChild(button);
+        banner.appendChild(container);
+
+        button.addEventListener('click', () => {
+            container.removeChild(message);
+            container.removeChild(button);
+        })
+    })
+}

@@ -141,6 +141,10 @@ body.dark #menu::before {
     color: #f1f1f1;
 }
 
+body.dark #banner div {
+    background-color: #4e2a01;
+}
+
 /*discover*/
 body.dark h2 {
     color: #ca73ca;
@@ -361,9 +365,9 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
     background-color: #FFFC9B;
 }
-
 
 footer {
     background-color: rgb(183, 229, 180);
@@ -615,30 +619,20 @@ input[type="submit"]:hover {
 }
 
 /*banner*/
-.banner {
-    display: none;
-    padding: 20px;
-    background-color: #f44336;
-    color: white;
+#banner div {
+    display: flex;
+    background-color: #ffebe9;
     text-align: center;
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-.closebtn {
-    color: white;
-    float: right;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.closebtn:hover {
-    color: black;
-}
-
-.show {
-    display: block;
+#banner button {
+    margin: 10px;
+    background-color: lightpink;
+    border-radius: 8px;
+    border: none;
 }
 
 /* weather*/
@@ -647,4 +641,11 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 10px;
     padding: 20px;
+}
+
+#weather-forecast div {
+    border: 5px solid #dd3131;
+    background-color: #ffcfcf;
+    border-radius: 8px;
+    padding: 10px;
 }

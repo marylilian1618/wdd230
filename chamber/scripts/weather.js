@@ -1,17 +1,17 @@
-// Current temp
 const weatherIcon = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#current-temp');
 const captionDesc = document.querySelector('#description-temp');
-const weatherForecast = document.getElementById('weather-forecast'); // Removed #
+const windspeed = document.querySelector('#speed');
+const weatherForecast = document.getElementById('weather-forecast');
 const url = `https://api.openweathermap.org/data/2.5/forecast?lat=-12.07&lon=-75.21&units=imperial&appid=7d1799cb656dd7ec926774e34069fc68`;
 
-// Function to fetch weather data
+//function to fetch weather data
 async function apiFetch() {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // For testing
+            console.log(data); //for testing
             displayResults(data);
             displayForecast(data);
         } else {
@@ -23,45 +23,68 @@ async function apiFetch() {
 }
 apiFetch();
 
-// Function to display current temperature
+//function to display current temperature
 function displayResults(data) {
-    currentTemp.textContent = `${data.list[0].main.temp.toFixed()}°F`; // Use textContent for security
+    let temperature = data.list[0].main.temp.toFixed()
+    let windSpeed = data.list[0].wind.speed;
+    windspeed.textContent = `${windSpeed}mph`
+    currentTemp.textContent = `${temperature}°F`;
     const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
     let desc = data.list[0].weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', "icon");
     weatherIcon.style.width = '100px';
     weatherIcon.style.height = '100px';
-    captionDesc.textContent = ` ${desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}`; // Capitalize each word
+    captionDesc.textContent = ` ${desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')}`;
+
+    function calculateWindChill(tem, windS) {
+        return 35.74 + (0.6215 * tem) - 35.75 * Math.pow(windS, 0.16) + 0.4275 * tem * Math.pow(windS, 0.16);
+    }
+    function updateWindChill() {
+
+        if (temperature <= 50 && windSpeed > 3) {
+            let windChill = calculateWindChill(temperature, windSpeed);
+            document.getElementById('windchill').textContent = windChill.toFixed(0) + ' deg';
+        } else {
+            document.getElementById('windchill').textContent = 'N/A';
+        }
+    }
+    updateWindChill();
+
 }
 
-// Function to display weather forecast
+//function to display weather forecast
 function displayForecast(data) {
-    for (let i = 0; i < data.list.length; i++) {
-        const div = document.createElement("div");
+    let currentDate = '';
+    let daysCount = 0;
+    for (let i = 1; i < data.list.length; i++) {
         const forecast = data.list[i];
-        if (forecast.dt_txt.includes("21:00")) {
+        const forecastDate = forecast.dt_txt.substring(0, 10);
+        if (forecast.dt_txt.includes("21:00") && currentDate !== forecastDate && daysCount < 4) {
+            const dateHeader = document.createElement('p');
+            dateHeader.textContent = forecastDate;
+            currentDate = forecastDate;
+
+            const div = document.createElement("div");
             const temp = document.createElement('p');
-            const date = document.createElement('p');
-            const dateformat = forecast.dt_txt.substring(0, 10);
             temp.textContent = `${forecast.main.temp.toFixed(0)}°F`;
-            date.textContent = `${dateformat}`;
 
             const icon = document.createElement('img');
             const iconsrc = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`;
+            icon.setAttribute('src', iconsrc);
+            icon.setAttribute('alt', forecast.weather[0].description);
 
             const description = document.createElement('p');
-            let desc = forecast.weather[0].description.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+            description.textContent = forecast.weather[0].description.charAt(0).toUpperCase() + forecast.weather[0].description.slice(1);
 
-            icon.setAttribute('src', iconsrc);
-            icon.setAttribute("alt", desc)
-            description.textContent = desc;
-
-            div.appendChild(date);
-            div.appendChild(icon);
+            div.appendChild(dateHeader);
             div.appendChild(temp);
+            div.appendChild(icon);
             div.appendChild(description);
             weatherForecast.appendChild(div);
+
+            daysCount++;
         }
     }
 }
+
