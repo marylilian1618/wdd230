@@ -52,7 +52,11 @@
     <main>
         <div id="banner"></div>
         <div class="home">
-            <img src="images/huancayo-image01.webp" alt="huancayo-image01">
+            <picture>
+                <source srcset="images/huancayo-small." media="(max-width: 300px)">
+                <source srcset="images/huancayo-medium.webp" media="(max-width: 500px)">
+                <img src="images/huancayo-large.jpg" alt="image" width="889" height="500">
+            </picture>
             <h2 class="text">Join the Chamber</h2>
         </div>
         <div class="general-div">
