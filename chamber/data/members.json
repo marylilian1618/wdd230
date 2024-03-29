@@ -14,7 +14,7 @@
       "number": "555-5678",
       "website": "www.xyzcorp.com",
       "image": "images/company02.webp",
-      "membership": "Bronze Membership"
+      "membership": "Bronze"
     },
     {
       "names": "LMN Ltd.",
@@ -22,7 +22,7 @@
       "number": "555-9012",
       "website": "www.lmn.com",
       "image": "images/company03.webp",
-      "membership": "Silver Membership"
+      "membership": "Silver"
     },
     {
       "names": "PQR Co.",
@@ -30,7 +30,7 @@
       "number": "555-3456",
       "website": "www.pqrco.com",
       "image": "images/company04.webp",
-      "membership": "Gold Membership"
+      "membership": "Gold"
     },
     {
       "names": "EFG Enterprises",
@@ -46,7 +46,7 @@
       "number": "555-2345",
       "website": "www.rstsolutions.com",
       "image": "images/company06.webp",
-      "membership": "Bronze Membership"
+      "membership": "Bronze"
     },
     {
       "names": "UVW Innovations",
@@ -54,7 +54,7 @@
       "number": "555-6789",
       "website": "www.uvwinnovations.com",
       "image": "images/company07.webp",
-      "membership": "Silver Membership"
+      "membership": "Silver"
     },
     {
       "names": "GHI Group",
@@ -62,7 +62,7 @@
       "number": "555-0123",
       "website": "www.ghigroup.com",
       "image": "images/company08.webp",
-      "membership": "Gold Membership"
+      "membership": "Gold"
     }
   ]
 }

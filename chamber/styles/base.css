@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;1,800&family=Outfit:wght@200&family=Protest+Guerrilla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Crimson+Text:wght@600&family=Kanit:ital,wght@0,600;1,800&family=Outfit:wght@200&family=Protest+Guerrilla&display=swap');
 
-/*header*/
 .flex {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .flex img {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding: 0 50px;
 }
 
 main p {
@@ -24,12 +19,10 @@ img {
     height: 500px;
 }
 
-/*map*/
 .map-container {
     position: relative;
     width: 70%;
     padding-top: 25%;
-    /* for contain our map 16:9 aspect ratio (divide 9 by 16 = 0.5625) */
 }
 
 .map {
@@ -39,13 +32,9 @@ img {
     width: 100%;
     height: 100%;
     border: 0;
-    margin-right: 20%;
-    margin-left: 20%;
-
+    margin: 0 20%;
 }
 
-/*-----*/
-/* switch dark mode*/
 .switch {
     background: #343d5b;
     border-radius: 1000px;
@@ -53,13 +42,10 @@ img {
     border: none;
     position: relative;
     cursor: pointer;
-    /*one next to another*/
     display: flex;
     outline: none;
-
 }
 
-/* sun and moon*/
 .switch span {
     width: 30px;
     height: 30px;
@@ -69,13 +55,11 @@ img {
     color: #fff;
 }
 
-/* insertamos la bolita con una pseudo class*/
 .switch::after {
     content: "";
     display: block;
     width: 30px;
     height: 30px;
-    /* en referencia a su relative*/
     position: absolute;
     background-color: #f1f1f1;
     top: 0;
@@ -84,8 +68,6 @@ img {
     border-radius: 100px;
     transition: .3s ease all;
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
-
-
 }
 
 .switch.active {
@@ -98,14 +80,18 @@ img {
     left: unset;
 }
 
-/*body dark*/
 body.dark {
     background-color: hsl(0, 0%, 0%);
     transition: .3s ease all;
 }
 
-body.dark header {
+body.dark header,
+body.dark .card,
+body.dark footer,
+body.dark #weather-forecast div,
+body.dark .text {
     background-color: rgb(10, 10, 80);
+    color: white;
     transition: .3s ease all;
 }
 
@@ -117,23 +103,8 @@ body.dark .general-div {
     background-color: #01011a;
 }
 
-body.dark .card {
-    background-color: rgb(10, 10, 80);
-    color: white;
-}
-
 body.dark h3 {
     color: #ff8080;
-}
-
-body.dark footer {
-    background-color: rgb(10, 10, 80);
-    color: white;
-}
-
-body.dark .colora {
-    color: white;
-
 }
 
 body.dark #menu::before {
@@ -145,8 +116,9 @@ body.dark #banner div {
     background-color: #4e2a01;
 }
 
-/*discover*/
-body.dark h2 {
+body.dark h2,
+body.dark label,
+body.dark form p {
     color: #ca73ca;
 }
 
@@ -155,25 +127,12 @@ body.dark .main-image p {
     color: white;
 }
 
-body.dark #message {
+body.dark #message,
+body.dark h1,
+body.dark .colora {
     color: white;
 }
 
-/*form*/
-body.dark label {
-    color: #ca73ca;
-}
-
-body.dark form p {
-    color: #ca73ca;
-}
-
-body.dark h1 {
-    color: rgb(224, 247, 255);
-}
-
-/*----------------------*/
-/* all main img*/
 main img {
     max-width: 100%;
     height: auto;
@@ -201,7 +160,6 @@ main img {
     color: black;
 }
 
-/*--------------------------------*/
 #menu {
     font-size: 1.5rem;
     border: 0;
@@ -243,7 +201,6 @@ main img {
     font-weight: 700;
 }
 
-/*wayfind symbols*/
 .icon::before {
     content: "🏠";
 }
@@ -272,12 +229,10 @@ main img {
     content: "🎂";
 }
 
-/*toggle*/
 .open a {
     display: block;
 }
 
-/*--------------------------------*/
 nav a {
     padding: 10px;
 }
@@ -346,19 +301,12 @@ main {
 }
 
 /* For markers*/
-
-
-.grid02 {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 40px;
-}
-
+.grid,
+.grid02,
 .grid03 {
     display: grid;
     grid-template-columns: 1fr;
     margin: 40px;
-
 }
 
 .card {
@@ -389,14 +337,10 @@ footer h3 {
     }
 }
 
-
-/*form thanks*/
 .center {
     text-align: center;
 }
 
-
-/*form css*/
 :root {
     --primary-color: #007bff;
     --accent-color: navy;
@@ -466,13 +410,6 @@ input[type="submit"]:hover {
     border-left: solid 8px green;
 }
 
-/* grid*/
-.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-/* membership*/
 .membership p {
     text-align: left;
     text-decoration: wavy;
@@ -487,7 +424,6 @@ input[type="submit"]:hover {
 .membership h3 {
     font-size: medium;
 }
-
 
 .npm,
 .bm,
@@ -507,7 +443,6 @@ input[type="submit"]:hover {
     border-collapse: collapse;
 }
 
-/*bronze*/
 .bm {
     background-color: rgb(252, 202, 183);
 }
@@ -516,7 +451,6 @@ input[type="submit"]:hover {
     border-color: rgb(156, 96, 73);
 }
 
-/*silver*/
 .sm {
     background-color: rgba(255, 255, 255, 0.747);
 }
@@ -525,7 +459,6 @@ input[type="submit"]:hover {
     border-color: rgb(100, 100, 100);
 }
 
-/*gold*/
 .gm {
     background-color: rgb(255, 243, 187);
 }
@@ -534,7 +467,6 @@ input[type="submit"]:hover {
     border-color: rgb(205, 207, 98);
 }
 
-/* ------------ discover html---------------------*/
 .discover-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -565,7 +497,6 @@ input[type="submit"]:hover {
     box-shadow: 0 0 20px #a79a68;
 }
 
-/*discover list*/
 .discover-list {
     padding: 20px;
 
@@ -593,7 +524,6 @@ input[type="submit"]:hover {
     display: inline-block;
 }
 
-/*menu*/
 .menu {
     text-align: center;
 }
@@ -619,7 +549,6 @@ input[type="submit"]:hover {
     outline: none;
 }
 
-/*banner*/
 #banner div {
     display: flex;
     background-color: #ffebe9;
@@ -636,7 +565,6 @@ input[type="submit"]:hover {
     border: none;
 }
 
-/* weather*/
 #weather-forecast {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
