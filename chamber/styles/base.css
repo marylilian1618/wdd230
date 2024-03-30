@@ -133,6 +133,10 @@ body.dark .colora {
     color: white;
 }
 
+body.dark .membership h3 {
+    color: #251111;
+}
+
 main img {
     max-width: 100%;
     height: auto;
@@ -158,6 +162,11 @@ main img {
     border-radius: 5px;
     font-size: 20px;
     color: black;
+    text-decoration: none;
+}
+
+.text:hover {
+    background-color: #e6d697;
 }
 
 #menu {
@@ -577,4 +586,17 @@ input[type="submit"]:hover {
     background-color: #ffcfcf;
     border-radius: 8px;
     padding: 10px;
+}
+
+#spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+#spotlights div {
+    margin: 15px;
+    padding: 25px;
 }

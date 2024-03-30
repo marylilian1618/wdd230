@@ -11,7 +11,6 @@ async function apiFetch() {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); //for testing
             displayResults(data);
             displayForecast(data);
         } else {

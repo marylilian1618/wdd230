@@ -6,7 +6,6 @@ async function getSpotlight() {
         const response = await fetch(Url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
             displaySpotlights(data.directory);
         } else {
             throw Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
@@ -20,16 +19,7 @@ function displaySpotlights(businessData) {
     const goldAndSilverBusinesses = businessData.filter(business => {
         return business.membership === "Gold" || business.membership === "Silver";
     });
-
-    if (goldAndSilverBusinesses.length === 0) {
-        console.log("No businesses found with Gold or Silver membership.");
-        return;
-    }
-
-    // Shuffle the array to randomize the order
     shuffleArray(goldAndSilverBusinesses);
-
-    // Display up to 3 businesses
     for (let i = 0; i < Math.min(3, goldAndSilverBusinesses.length); i++) {
         const business = goldAndSilverBusinesses[i];
         createCard(business);
@@ -68,4 +58,4 @@ function shuffleArray(array) {
     }
 }
 
-getSpotlight(); // Fetch and display spotlights when the script is executed
+getSpotlight(); 
