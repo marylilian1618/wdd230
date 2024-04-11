@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.header-image {
+    position: relative;
+}
+
+.header-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-button {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    background: radial-gradient(#fff, #71bfff);
+    padding: 1rem;
+    box-shadow: 0 0 3rem #5589ac;
+    opacity: 0.75;
+    height: 40px;
+
+}
+
+.header-button a {
+    margin: 0;
+    padding: .15rem;
+    font-weight: 500;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+.header-name {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    color: #000;
+    margin: 0;
+    padding: .15rem;
+    font-weight: 400;
+    font-size: 7rem;
+    font-family: "Great Vibes", serif;
+}
+
+/*----------------------------*/
+
+/*--------------------------------*/
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    list-style: none;
+    background-color: rgb(92, 145, 7);
+}
+
+.navigation a {
+    display: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px;
+}
+
+.navigation a:hover {
+    background-color: #a5d4ff;
+    color: #1f1e1e;
+    font-weight: 700;
+}
+
+/*wayfind symbols*/
+.icon::before {
+    content: "🏠";
+}
+
+.icon1::before {
+    content: "😄";
+}
+
+.icon2::before {
+    content: "🎉";
+}
+
+.icon3::before {
+    content: "❤️";
+}
+
+.icon4::before {
+    content: "📖";
+}
+
+.icon5::before {
+    content: "😎";
+}
+
+/*toggle*/
+.open a {
+    display: block;
+}
+
+/*--------------------------------*/
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+
+
+h1 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(92, 145, 7);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+    color: rgb(90, 1, 56);
+    font-size: 1.3rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    padding: 20px;
+    background-color: rgb(187, 239, 255);
+}
+
+/* For markers*/
+::marker {
+    color: #9c00a1;
+    font-size: 2rem;
+}
+
+
+li::before {
+    content: "\2705";
+}
+
+
+.principal.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: rgb(92, 145, 7);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*weather*/
+#weather-icon,
+#current-temp,
+#description-temp {
+    display: inline-block;
+}
+
+/*banner*/
+#banner div {
+    display: flex;
+    background-color: #059600;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#banner button {
+    margin: 10px;
+    background-color: rgb(197, 30, 55);
+    border-radius: 8px;
+    border: none;
+}
+
+#banner h4 {
+    color: #fff;
+    padding: 0 20px 0;
+    text-align: center;
+}
+
+/*--------------------*/
+/* ----form------------ */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="date"] {
+    width: calc(100% - 22px);
+    /* Adjust width to accommodate calendar icon */
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/*---grid form*/
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+/* contact */
+.grid-contact {
+    display: grid;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* for contain our map 16:9 aspect ratio (divide 9 by 16 = 0.5625) */
+}
+
+.map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Lilian Gonzales - WDD 230 - Final Project</title>
+    <meta name="description" content="Web Frontend Development. Final Project Assignment.">
+    <meta name="author" content="Maria Lilian Gonzales Inga">
+    <!--Normalize.css goes first than the others css-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--Favicon-->
+    <link rel="icon" href="favicon.ico">
+    <!--Social media-->
+    <meta property="og:title" content="Final Project Assignment.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://estudiantes.ucontinental.edu.pe/wp-content/uploads/2019/02/foto-de-huancayo-peru-uc-portada.jpg">
+    <meta property="og:url" content="https://marylilian1618.github.io/wdd230/final-project">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/current-temp.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+    <script></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-image">
+            <picture>
+                <source srcset="images/head-image-small.jpg" media="(max-width: 400px)">
+                <source srcset="images/head-image-medium.jpg" media="(max-width: 1000px)">
+                <img src="images/head-image.jpg" alt="table setting" width="1500" height="525">
+            </picture>
+            <p class="header-name">Scoots</p>
+            <div class="header-button">
+                <a href="reservations.html">Make a rental reservation</a>
+            </div>
+        </div>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html" title="Home" class="icon">Home</a>
+            <a href="rentals.html" title="Rentals" class="icon2">Rentals</a>
+            <a href="reservations.html" title="Reservations" class="icon5">Reservations</a>
+            <a href="contact.html" title="Contact" class="icon1">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div id="banner"></div>
+        <div class="principal-grid">
+            <section class="card">
+                <h2>Types of Rentals</h2>
+                <div class="grid-rentals">
+                    <div>
+                        <h3>Honda Motor Scooters</h3>
+                        <ul>
+                            <li>Honda Metropolitan (49cc) - 1 person</li>
+                            <li>Honda Dio (110cc) - 2 person</li>
+                            <li>Honda PCX150 (149cc) - 2 person</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Side-by-Side ATVs</h3>
+                        <ul>
+                            <li>Honda Pioneer 1000 - 4 person</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Jeeps</h3>
+                        <ul>
+                            <li>Jeep Wrangler - 4 door manuel with A/C - 5 person</li>
+                            <li>Jeep Wrangler - 2 door - open air - manuel - 4 person</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="card">
+                <h2>Information</h2>
+                <div>
+                    <img id="weather-icon" src="" alt="">
+                    <p id="current-temp"></span></p>
+                    <p id="description-temp"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Maria Lilian Gonzales Inga
+            Huancayo - Perú
+        </p>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

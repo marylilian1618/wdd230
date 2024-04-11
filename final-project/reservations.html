@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maria Lilian Gonzales - WDD 230 - Final Project</title>
+    <meta name="description" content="Web Frontend Development. Final Project Assignment.">
+    <meta name="author" content="Maria Lilian Gonzales Inga">
+    <!--Normalize.css goes first than the others css-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--Favicon-->
+    <link rel="icon" href="favicon.ico">
+    <!--Social media-->
+    <meta property="og:title" content="Final Project Assignment.">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://estudiantes.ucontinental.edu.pe/wp-content/uploads/2019/02/foto-de-huancayo-peru-uc-portada.jpg">
+    <meta property="og:url" content="https://marylilian1618.github.io/wdd230/rentals.html">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/current-temp.js" defer></script>
+    <script src="scripts/banner.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-image">
+            <picture>
+                <source srcset="images/head-image-small.jpg" media="(max-width: 400px)">
+                <source srcset="images/head-image-medium.jpg" media="(max-width: 1000px)">
+                <img src="images/head-image.jpg" alt="table setting" width="1500" height="525">
+            </picture>
+            <p class="header-name">Scoots</p>
+            <div class="header-button">
+                <a href="reservations.html">Make a rental reservation</a>
+            </div>
+        </div>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html" title="Home" class="icon">Home</a>
+            <a href="rentals.html" title="Rentals" class="icon2">Rentals</a>
+            <a href="reservations.html" title="Reservations" class="icon5">Reservations</a>
+            <a href="contact.html" title="Contact" class="icon1">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Rental Pricing</h2>
+        <table id="rentalTable">
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max Persons</th>
+                    <th>Reservation (Half Day)</th>
+                    <th>Reservation (Full Day)</th>
+                    <th>Walk-In (Half Day)</th>
+                    <th>Walk-In (Full Day)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be populated with json javascript -->
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+        <p>Maria Lilian Gonzales Inga
+            Huancayo - Perú
+        </p>
+        <p id="year"></p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
