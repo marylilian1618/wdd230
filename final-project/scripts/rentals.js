@@ -1,3 +1,6 @@
+const rentalURL = "https://marylilian1618/wdd230/data/rentals.json";
+const tableBody = document.querySelector('#rentalTable tbody');
+
 async function getData() {
     try {
         const response = await fetch(rentalURL);
