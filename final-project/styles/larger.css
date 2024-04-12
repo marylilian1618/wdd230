@@ -13,6 +13,18 @@
         flex: 1 1 100%;
     }
 
+    .header-button {
+        height: 40px;
+    }
+
+    .header-button a {
+        font-size: 3rem;
+    }
+
+    .header-name {
+        font-size: 7rem;
+    }
+
     .principal-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
