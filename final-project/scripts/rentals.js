@@ -1,4 +1,4 @@
-const rentalURL = "https://marylilian1618/wdd230/data/rentals.json";
+const rentalURL = "https://marylilian1618.github.io/wdd230/data/rentals.json";
 const tableBody = document.querySelector('#rentalTable tbody');
 
 async function getData() {
