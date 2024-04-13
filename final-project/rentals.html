@@ -23,6 +23,7 @@
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/current-temp.js" defer></script>
     <script src="scripts/banner.js" defer></script>
+    <script src="scripts/rentals.js" defer></script>
 </head>
 
 <body>
@@ -47,78 +48,40 @@
         </nav>
     </header>
     <main>
-        <section class="grid-form">
+        <h2>Rental Pricing</h2>
+        <table id="rentalTable">
+            <thead>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max Persons</th>
+                    <th>Reservation (Half Day)</th>
+                    <th>Reservation (Full Day)</th>
+                    <th>Walk-In (Half Day)</th>
+                    <th>Walk-In (Full Day)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows populated with json-->
+            </tbody>
+        </table>
+        <section class="my-image">
             <div>
-                <h2>Rental Details Form</h2>
-                <form action="/submit_rental_details" method="post">
-                    <label for="date">Date:</label>
-                    <input type="date" id="date" name="date" required><br><br>
-
-                    <label for="period">Rental Period:</label>
-                    <input type="text" id="period" name="period" required><br><br>
-
-                    <label for="rental_type">Rental Type:</label>
-                    <select id="rental_type" name="rental_type" required>
-                        <option value="">Select Type</option>
-                        <option value="Car">Car</option>
-                        <option value="Bike">Bike</option>
-                        <option value="Boat">Boat</option>
-                        <option value="Other">Other</option>
-                    </select><br><br>
-
-                    <label for="number">Number of Rentals:</label>
-                    <input type="number" id="number" name="number" required><br><br>
-
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
-
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="location">Home State or Country:</label>
-                    <input type="text" id="location" name="location" required><br><br>
-
-                    <label for="cruise_line">Cruise Line (if applicable):</label>
-                    <input type="text" id="cruise_line" name="cruise_line"><br><br>
-
-                    <label for="comments">Special Accommodations/Comments:</label><br>
-                    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
-
-                    <label for="drop_off_request">Drop-off Request:</label>
-                    <input type="text" id="drop_off_request" name="drop_off_request"><br><br>
-
-                    <input type="submit" value="Submit">
-                </form>
+                <img src="images/honda-dio.png" alt="My photo">
+                <img src="images/honda-metro.jpg" alt="My photo">
+                <img src="images/honda-pcx.webp" alt="My photo">
+                <img src="images/honda-pioneer.png" alt="My photo">
+                <img src="images/jeep-wran.png" alt="My photo">
+                <img src="images/jeep-wran2.jpg" alt="My photo">
             </div>
-            <div>
-                <h2>Rental Services and Agreements</h2>
-                <div class="card">
-                    <ul>
-                        <li>A $50 security deposit is required to confirm reservations.</li>
-                        <li>A valid drivers license is required in hand at the time of rental.</li>
-                        <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
-                        <li>Fuel charge is not included.</li>
-                        <li>Unlimited mileage.</li>
-                        <li>Liability insurance is included.</li>
-                        <li>Damage insurance is available for purchase.</li>
-                        <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-                        <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
-                        <li>Rentals may be returned to either physical location.</li>
 
-                    </ul>
-                </div>
-            </div>
         </section>
+
     </main>
     <footer>
         <p>Maria Lilian Gonzales Inga
             Huancayo - Perú
         </p>
         <p id="year"></p>
-        <p id="lastModified"></p>
     </footer>
 </body>
 

@@ -329,14 +329,13 @@ input[type="submit"]:hover {
 }
 
 /*reservations*/
-/* General table styles */
+
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
 
-/* Table header styles */
 th {
     background-color: #f8f9fa;
     padding: 12px;
@@ -344,18 +343,21 @@ th {
     border-bottom: 2px solid #dee2e6;
 }
 
-/* Table body styles */
+
 td {
     padding: 12px;
     border-bottom: 1px solid #dee2e6;
 }
 
-/* Alternating row background colors */
+
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Hover effect on rows */
 tbody tr:hover {
     background-color: #e9ecef;
+}
+
+.my-image img {
+    max-width: 120px;
 }
